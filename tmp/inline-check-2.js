@@ -1,0 +1,1 @@
+try{const saved=JSON.parse(localStorage.getItem("forja-v1")||"null");if(saved&&saved.scores)document.getElementById("resumeCampaign").hidden=false}catch(e){} function clearLocalData(){if(!confirm("Apagar a ficha e todos os dados locais salvos neste navegador? Esta ação não pode ser desfeita."))return;try{localStorage.removeItem("forja-v1")}catch(e){}location.reload()}
